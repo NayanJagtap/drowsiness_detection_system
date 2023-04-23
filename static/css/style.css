@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+a{
+    color:#dd2476;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: #222;
+}
+
+ul {
+    list-style-type: none;
+}
+
+:root {
+    --font-family-roboto: "Roboto", sans-serif;
+    --font-family-poppins: "Poppins", sans-serif;
+    --focus-color: #ea005e;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+:focus {
+    outline: 2px solid var(--focus-color);
+    outline-offset: 3px;
+}
+
+button:focus {
+    outline: 2px solid var(--focus-color);
+    outline-offset: 5px;
+}
+
+button:active {
+    outline: none;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+
+.owner_div {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.owner_div h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.profile_img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.profile_img img {
+    width: 100%;
+    border-radius: 50%;
+    
+}
+
+:root {
+    --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
+  }
+  
+
+  
+  .card {
+
+    border: 1px solid #dd2476;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    border: 5px solid;
+    border-image-slice: 1;
+    background: var(--gradient) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    border-image-source:  var(--gradient) !important; 
+    text-decoration: none;
+    transition: all .4s ease;
+  }
+  
+  .btn:hover, .btn:focus {
+        background: var(--gradient) !important;
+    -webkit-background-clip: none !important;
+    -webkit-text-fill-color: #fb0b0b !important;
+    border: 5px solid #4f13dd !important; 
+    box-shadow: #222 1px 0 10px;
+    text-decoration: underline;
+  }

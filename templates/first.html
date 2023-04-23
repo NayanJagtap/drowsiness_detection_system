@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/landing.css')}}">
+</head>
+<body>
+  <div class="hero">
+    <div class="highway"></div>
+    <div class="city"></div>
+    <div class="car">
+      <img src="{{url_for('static',filename='images/car.png')}}">
+    </div>
+    <div class ="wheel">
+      <img src="{{url_for('static',filename='images/wheel.png')}}" class="back-wheel">
+      <img src="{{url_for('static',filename='images/wheel.png')}}" class="front-wheel">
+    </div>
+  </div>
+
+
+  <script>
+    let my_url="{{url_for('second')}} ";
+    setTimeout(function(){
+      window.location.replace(my_url);
+    },6000);
+  </script>
+</body>
+</html>
